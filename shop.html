@@ -62,7 +62,7 @@
       </nav>
 
 
-
+  <!-- Нужно обернуть фильтры в свой общий контейнер, а плашки с товарами в свой -->
       <aside class="brands">
         <form   action="" method="get">
           <p>
@@ -126,6 +126,10 @@
         <article class="product-item care-products">
           <img src="http://placehold.it/220x165" alt='Набор для путешествий "Baxter of California"'>
           <p class="item">Набор для путешествий "Baxter of California"</p>
+          <!-- Тут логичнее сделать так
+          <span>2 900</span>
+          <a class="item-buy" href="">Купить</a>
+          -->
           <div class="item-price">2 900 РУБ.
             <a class="item-buy" href="">Купить</a>
           </div>
@@ -172,7 +176,7 @@
         </article>
       </section>
 
-      <div class="page-navigation">
+      <div class="page-navigation"><!-- Навигация размечается через список с ссылками -->
         <span class="page"><a href="">1</a></span>
         <span class="page active">2</span>
         <span class="page"><a href="">3</a></span>
