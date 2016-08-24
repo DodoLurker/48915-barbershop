@@ -56,131 +56,151 @@
             <a href="shop.html">Магазин</a>
           </li>
           <li>
-            Средства для ухода
+            <a>Средства для ухода</a>
           </li>
         </ul>
       </nav>
 
 
   <!-- Нужно обернуть фильтры в свой общий контейнер, а плашки с товарами в свой -->
-      <aside class="brands">
+      <div class="filter">
         <form   action="" method="get">
-          <p>
-            <label>
-              Baxter of California<input type="checkbox" name="Baxter of California" checked>
-            </label>
-          </p>
-          <p>
-            <label>
-              Mr Natty<input type="checkbox" name="Mr Natty">
-            </label>
-          </p>
-          <p>
-            <label>
-              Suavecito<input type="checkbox" name="Suavecito" checked>
-            </label>
-          </p>
-          <p>
-            <label>
-              Malin+Goetz<input type="checkbox" name="Malin+Goetz">
-            </label>
-          </p>
-          <p>
-            <label>
-              Murray's<input type="checkbox" name="Murray's">
-            </label>
-          </p>
-          <p>
-            <label>
-              American Crew<input type="checkbox" name="American Crew" checked>
-            </label>
-          </p>
-        </form>
-      </aside>
+          <fieldset class="brands">
+            <legend>Производители</legend>
+              <p>
+                <label>
+                  Baxter of California<input type="checkbox" name="Baxter of California" checked>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Mr Natty<input type="checkbox" name="Mr Natty">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Suavecito<input type="checkbox" name="Suavecito" checked>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Malin+Goetz<input type="checkbox" name="Malin+Goetz">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Murray's<input type="checkbox" name="Murray's">
+                </label>
+              </p>
+              <p>
+                <label>
+                  American Crew<input type="checkbox" name="American Crew" checked>
+                </label>
+              </p>
+          </fieldset>
 
-      <aside class="products-groups">
-        <form action="" method ="get">
-          <p>
-            <label>
-              Бритвенные принадлежности <input type="radio" name ="product group" value="shaving accessories">
-            </label>
-          </p>
-          <p>
-            <label>
-              Средства для ухода <input type="radio" name ="product group" value="care products" checked>
-            </label>
-          </p>
-          <p>
-            <label>
-              Аксессуары <input type="radio" name ="product group" value="accessories">
-            </label>
-          </p>
+          <fieldset class="product-groups">
+            <legend>Группы товаров</legend>
+            <p>
+              <label>
+                Бритвенные принадлежности <input type="radio" name ="product group" value="shaving accessories">
+              </label>
+            </p>
+            <p>
+              <label>
+                Средства для ухода <input type="radio" name ="product group" value="care products" checked>
+              </label>
+            </p>
+            <p>
+              <label>
+                Аксессуары <input type="radio" name ="product group" value="accessories">
+              </label>
+            </p>
+          </fieldset>
 
           <button type="submit">Показать</button>
         </form>
-      </aside>
+      </div>
 
 
 
-      <section class="catalog">
+      <div class="catalog">
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Набор для путешествий "Baxter of California"'>
-          <p class="item">Набор для путешествий "Baxter of California"</p>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Набор для путешествий "Baxter of California"'>
+            <div class="item-name">
+              <p>Набор для путешествий</p>
+              <p class="capitals">"Baxter of California"</p>
+            </div>
+          </a>
           <!-- Тут логичнее сделать так
           <span>2 900</span>
           <a class="item-buy" href="">Купить</a>
           -->
-          <div class="item-price">2 900 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <span class="item-price">2 900 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
 
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Увлажняющий кондиционер "Baxter of California"'>
-          <p class="item">Увлажняющий кондиционер <span class="capitals">"Baxter of California"</span></p>
-          <div class="item-price">750 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Увлажняющий кондиционер "Baxter of California"'>
+            <p>Увлажняющий кондиционер</p>
+            <p class="capitals">"Baxter of California"</p>
+          </a>
+          <span class="item-price">750 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
 
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Гель для волос "Suavecito"'>
-          <p class="item">Гель для волос <span class="capitals">"Suavecito"</span></p>
-          <div class="item-price">290 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Гель для волос "Suavecito"'>
+            <p>Гель для волос</p>
+            <p class="capitals">"Suavecito"</p>
+          </a>
+          <span class="item-price">290 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
 
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Глина для укладки волос "American Crew"'>
-          <p class="item">Глина для укладки волос  <span class="capitals">"American Crew"</span></p>
-          <div class="item-price">500 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Глина для укладки волос "American Crew"'>
+            <p>Глина для укладки волос</p>
+            <p class="capitals">"American Crew"</p>
+          </a>
+          <span class="item-price">500 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
 
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Гель для волос "American Crew"'>
-          <p class="item">Гель для волос <span class="capitals">"American Crew"</span></p>
-          <div class="item-price">300 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Гель для волос "American Crew"'>
+            <p>Гель для воло</p>
+            <p class="capitals">"American Crew"</p>
+          </a>
+          <span class="item-price">300 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
 
         <article class="product-item care-products">
-          <img src="http://placehold.it/220x165" alt='Набор для бритья "Baxter of California"'>
-          <p class="item">Набор для бритья <span class="capitals">"Baxter of California"</span></p>
-          <div class="item-price">3 900 РУБ.
-            <a class="item-buy" href="">Купить</a>
-          </div>
+          <a href="">
+            <img src="http://placehold.it/220x165" alt='Набор для бритья "Baxter of California"'>
+            <div class="item-name">
+              <p>Набор для брить</p>
+              <p class="capitals">"Baxter of California"</p>
+            </div>
+          </a>
+          <span class="item-price">3 900 РУБ.</span>
+          <a class="item-buy" href="">Купить</a>
         </article>
-      </section>
 
-      <div class="page-navigation"><!-- Навигация размечается через список с ссылками -->
-        <span class="page"><a href="">1</a></span>
-        <span class="page active">2</span>
-        <span class="page"><a href="">3</a></span>
-        <span class="page"><a href="">4</a></span>
+        <div class="page-navigation"><!-- Навигация размечается через список с ссылками -->
+          <ul>
+            <li class="page"><a href="">1</a></li>
+            <li class="page active"><a>2</a></li>
+            <li class="page"><a href="">3</a></li>
+            <li class="page"><a href="">4</a></li>
+          </ul>
+        </div>
       </div>
 
 
